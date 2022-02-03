@@ -1,3 +1,15 @@
+== AVRO Schema Registry REST API
+
+[grid="all"]
+`-------.-----------'----
+Col 1   Col 2       Col 3
+-------------------------
+1       Item 1      a
+2       Item 2      b
+3       Item 3      c
+-------------------------
+6       Three items d
+-------------------------
 
 Syntax	Example
 Getting all versions of a topic schema	
