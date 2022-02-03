@@ -2,12 +2,13 @@
 
 [options="header,footer"]
 |=======================
-|Col 1|Col 2      |Col 3
-|1    |Item 1     |a
-|2    |Item 2     |b
-|3    |Item 3     |c
-|6    |Three items|d
+|Task|Syntax      |Col 3
+|Getting all versions of a topic schema	    |curl -X GET http://<host>:<port>/subjects/<topicName>-value/versions    
+|To Read a particular version     |curl -X GET http://<host>:<port>/subjects/<topicName>-value/versions/2    
+|To delete a schema from registry    |curl -X DELETE http://<host>:<port>/subjects/Kafka-value     
+|To delete a schema from registry permanently    |curl -X DELETE http://<host>:<port>/subjects/Kafka-value?permanent=true
 |=======================
+
 
 Syntax	Example
 Getting all versions of a topic schema	
