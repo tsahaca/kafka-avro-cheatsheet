@@ -1,0 +1,25 @@
+
+Syntax	Example
+Getting all versions of a topic schema	
+curl -X GET http://<host>:<port>/subjects/<topicName>-value/versions
+curl -X GET http://<host>:<port>/subjects/myTopic-value/versions
+To Read a particular version 	curl -X GET http://<host>:<port>/subjects/<topicName>-value/versions/2	curl -X GET http://<host>:<pory>/subjects/myTopic-value/versions/2
+to delete a schema from registry 	curl -X DELETE http://<host>:<port>/subjects/Kafka-value
+curl -X DELETE http://<host>:<port>/subjects/Kafka-value?permanent=true	
+
+curl -X DELETE <schema-registry-api-key>:<schema-registry-api-secret> <schema-registry-url>/subjects/Kafka-value
+curl -X DELETE <schema-registry-api-key>:<schema-registry-api-secret> <schema-registry-url>/subjects/Kafka-value?permanent=true	
+register a new schema	
+curl --user username:base64encoded-secret \
+-X POST -H "Content-Type: application/vnd.schemaregistry.v1+json"  \
+--data @schema-file.avsc \
+https://<host>:<port>/subjects/<topicName>-value/versions
+if you are behind a proxy firewall, you may get the following error 
+
+curl: (60) SSL certificate problem: unable to get local issuer certificate
+More details here: https://curl.haxx.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it.
+
+To bypass the cert verification, use --insecure in the curl command
