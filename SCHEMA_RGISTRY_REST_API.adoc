@@ -2,7 +2,7 @@
 
 [options="header,footer"]
 |=======================
-|Task|Syntax      |Col 3
+|Task|Syntax      
 |Getting all versions of a topic schema	    |curl -X GET http://<host>:<port>/subjects/<topicName>-value/versions    
 |To Read a particular version     |curl -X GET http://<host>:<port>/subjects/<topicName>-value/versions/2    
 |To delete a schema from registry    |curl -X DELETE http://<host>:<port>/subjects/Kafka-value     
