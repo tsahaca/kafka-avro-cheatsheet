@@ -21,10 +21,15 @@
 |To delete a schema from Secured Registry |curl -X DELETE <schema-registry-api-key>:<schema-registry-api-secret> <schema-registry-url>/subjects/Kafka-value |curl -X DELETE <schema-registry-api-key>:<schema-registry-api-secret> <schema-registry-url>/subjects/Kafka-value?permanent=true	
 |=======================
 
-To register a new schema	curl --user username:base64encoded-secret \
+To register a new schema	
+[source,bash]
+----
+curl --user username:base64encoded-secret \
 -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json"  \
 --data @schema-file.avsc \
 https://<host>:<port>/subjects/<topicName>-value/versions
+----
+
 if you are behind a proxy firewall, you may get the following error 
 
 curl: (60) SSL certificate problem: unable to get local issuer certificate
