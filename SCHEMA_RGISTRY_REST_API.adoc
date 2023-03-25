@@ -38,4 +38,8 @@ More details here: https://curl.haxx.se/docs/sslcerts.html
 curl failed to verify the legitimacy of the server and therefore could not
 establish a secure connection to it.
 
-To bypass the cert verification, use --insecure in the curl command
+To bypass the cert verification, use [red]#--insecure# in the curl command
+
+[red]#Obvious# and [big red yellow-background]*very obvious*.
+[underline]#Underline text#, [overline]#overline text# and
+[blue line-through]*bold blue and line-through*.
