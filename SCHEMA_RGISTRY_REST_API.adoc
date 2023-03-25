@@ -43,3 +43,13 @@ To bypass the cert verification, use [red]#--insecure# in the curl command
 [red]#Obvious# and [big red yellow-background]*very obvious*.
 [underline]#Underline text#, [overline]#overline text# and
 [blue line-through]*bold blue and line-through*.
+
+- `#F00`
+- `#F00A`
+- `#FF0000`
+- `#FF0000AA`
+- `RGB(0,255,0)`
+- `RGB(0%,100%,0%)`
+- `RGBA(0,255,0,0.3)`
+- `HSL(540,70%,50%)`
+- `HSLA(540,70%,50%,0.3)`
